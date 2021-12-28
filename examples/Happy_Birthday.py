@@ -20,14 +20,14 @@ turtle.forward(350)
 
 # Mid Line 2
 turtle.penup()
-turtle.goto(-160,-150)
+turtle.goto(-150,-150)
 turtle.color("white")
 turtle.pendown()
 turtle.forward(300)
 
 # First Line 3
 turtle.penup()
-turtle.goto(-150,-120)
+turtle.goto(-130,-120)
 turtle.color("white")
 turtle.pendown()
 turtle.forward(250)
