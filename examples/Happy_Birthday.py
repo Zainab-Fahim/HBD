@@ -92,9 +92,9 @@ turtle.pendown()
 turtle.forward(20)
 
 # Decoration
-colors = ["red", "orange", "yellow", "green", "blue", "purple", "black"]
+colors = ["red", "orange", "turquoise", "blue", "purple", "black"]
 turtle.penup()
-turtle.goto(-40,-50)
+turtle.goto(-20,-50)
 turtle.pendown()
 
 for each_color in colors:
