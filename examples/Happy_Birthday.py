@@ -1,5 +1,11 @@
+from pygame import mixer
 import turtle
 import random
+
+# plays music
+mixer.init()
+mixer.music.load("audio/hbd_song.mp3")
+mixer.music.play()
 
 # sets background
 bg = turtle.Screen()
@@ -14,21 +20,21 @@ turtle.forward(350)
 
 # Mid Line 2
 turtle.penup()
-turtle.goto(-160,-150)
+turtle.goto(-150,-150)
 turtle.color("white")
 turtle.pendown()
 turtle.forward(300)
 
 # First Line 3
 turtle.penup()
-turtle.goto(-150,-120)
+turtle.goto(-130,-120)
 turtle.color("white")
 turtle.pendown()
 turtle.forward(250)
 
 # Cake
 turtle.penup()
-turtle.goto(-100,-100)
+turtle.goto(-80,-100)
 turtle.color("white")
 turtle.begin_fill()
 turtle.pendown()
@@ -43,40 +49,52 @@ turtle.end_fill()
 
 # Candles
 turtle.penup()
-turtle.goto(-90,0)
-turtle.color("red")
+turtle.goto(-70,0)
+turtle.color("purple")
 turtle.left(180)
 turtle.pendown()
 turtle.forward(20)
 
 turtle.penup()
-turtle.goto(-60,0)
-turtle.color("blue")
+turtle.goto(-50,0)
+turtle.color("lightgreen")
 turtle.pendown()
 turtle.forward(20)
 
 turtle.penup()
 turtle.goto(-30,0)
-turtle.color("yellow")
+turtle.color("green")
 turtle.pendown()
 turtle.forward(20)
 
 turtle.penup()
-turtle.goto(0,0)
+turtle.goto(-10,0)
+turtle.color("red")
+turtle.pendown()
+turtle.forward(20)
+
+turtle.penup()
+turtle.goto(10,0)
 turtle.color("green")
 turtle.pendown()
 turtle.forward(20)
 
 turtle.penup()
 turtle.goto(30,0)
+turtle.color("lightgreen")
+turtle.pendown()
+turtle.forward(20)
+
+turtle.penup()
+turtle.goto(50,0)
 turtle.color("purple")
 turtle.pendown()
 turtle.forward(20)
 
 # Decoration
-colors = ["red", "orange", "yellow", "green", "blue", "purple", "black"]
+colors = ["red", "orange", "turquoise", "blue", "purple", "black"]
 turtle.penup()
-turtle.goto(-40,-50)
+turtle.goto(-20,-50)
 turtle.pendown()
 
 for each_color in colors:
@@ -88,8 +106,11 @@ for each_color in colors:
 
 # Happy Birthday message
 turtle.penup()
-turtle.goto(-150, 50)
+turtle.goto(-150, 50) 
 turtle.color("pink")
 turtle.pendown()
-turtle.write("Happy Birthday To You!", None, None, "25pt bold")
+turtle.write("Happy Birthday Stranger!", move=True, font=('Arial', 20, 'normal', 'bold', 'italic', 'underline'))
 turtle.color("black")
+
+#exiting the screen on click
+bg.exitonclick()
