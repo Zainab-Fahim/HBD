@@ -34,7 +34,7 @@ turtle.forward(250)
 
 # Cake
 turtle.penup()
-turtle.goto(-100,-100)
+turtle.goto(-80,-100)
 turtle.color("white")
 turtle.begin_fill()
 turtle.pendown()
