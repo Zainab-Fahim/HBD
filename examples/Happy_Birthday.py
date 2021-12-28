@@ -106,8 +106,8 @@ for each_color in colors:
 
 # Happy Birthday message
 turtle.penup()
-turtle.goto(-150, 50)
+turtle.goto(-150, 50) 
 turtle.color("pink")
 turtle.pendown()
-turtle.write("Happy Birthday To You!", None, None, "25pt bold")
+turtle.write("Happy Birthday Naana!", move=True, font=('Arial', 20, 'normal', 'bold', 'italic', 'underline'))
 turtle.color("black")
