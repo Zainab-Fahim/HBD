@@ -111,3 +111,6 @@ turtle.color("pink")
 turtle.pendown()
 turtle.write("Happy Birthday Naana!", move=True, font=('Arial', 20, 'normal', 'bold', 'italic', 'underline'))
 turtle.color("black")
+
+#exiting the screen on click
+bg.exitonclick()
