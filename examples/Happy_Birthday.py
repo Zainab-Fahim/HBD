@@ -1,5 +1,11 @@
+from pygame import mixer
 import turtle
 import random
+
+# plays music
+mixer.init()
+mixer.music.load("audio/hbd_song.mp3")
+mixer.music.play()
 
 # sets background
 bg = turtle.Screen()
